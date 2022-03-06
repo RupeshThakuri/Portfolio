@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking words-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!--Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Css Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking prism -->
+    <link rel="stylesheet" href="./prism/prism.css">
+    <title>Project 6</title>
+</head>
+
+<body>
+    <section id="nav">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="./images/whitelogo.png" alt="">
+            </div>
+            <div class="navbar__navlinks">
+                <ul class="navbar__navlinks-main">
+                    <div class="close__div">
+                        <li><a class="close"><i class="fas fa-times"></i></a></li>
+                    </div>
+                    <li><a href="./index.html#home" class="nav__link">Home</a></li>
+                    <li><a href="./index.html#about" class="nav__link">About</a></li>
+                    <li><a href="./index.html#Projects" class="nav__link">Projects</a></li>
+                    <li><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+                    <div class="navbar__navlinks-main--social-links">
+                        <li><a href="https://www.facebook.com/rupesh.thakurimalla"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/rupeshthakuri16/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rupesh-thakuri-39b9a7202/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    </div>
+                </ul>
+                <a class="hamburger"><i class="fas fa-bars"></i></a>
+                <a href="./MYFinalCV.pdf" download="" class="CV">My CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- Content Part -->
+    <section id="content_part">
+        <div class="content">
+            <div class="project_nameDisplay">
+                <h2>#Project 6</h2>
+                <p>My first Portfolio website</p>
+            </div>
+
+            <div class="video_box">
+                <video class="video" poster="./projects/projectImg/project6.png" src="./projects/projectVid/project6.mp4" controls></video>
+            </div>
+            <div class="discription">
+                <h2 class="discription_heading"><strong> Idea and description</strong></h2>
+                <p>Seeing everyone having portfolio website i want to have my own too. With not much of coding experience i tried having one using html and css only. So here is how the outcomes came. With no such coding experience don't expect it to be responsive.
+                </p>
+                <p>To make it more excited I added some gallary and edidted images using adobe too to fit the background above. Sound intresting right? Have a look!
+                </p>
+            </div>
+            <div class="html_code">
+                <h2>Here is the HTML code.</h2>
+                <pre class="language-html">
+                <code>
+&LT!DOCTYPE html&GT
+&LThtml lang="en"&GT
+
+&LThead&GT
+    &LTmeta charset="UTF-8"&GT
+    &LTmeta name="viewport" content="width=device-width, initial-scale=1.0"&GT
+    &LTlink rel="stylesheet" href="home.css"&GT
+    &LTlink rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"&GT
+    &LTlink href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet"&GT
+    &LTlink href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;600&display=swap" rel="stylesheet"&GT
+    &LTlink rel="preconnect" href="https://fonts.gstatic.com"&GT
+    &LTlink href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet"&GT
+    &LTlink href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&display=swap" rel="stylesheet"&GT
+    &LTlink href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"&GT
+    &LTlink href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"&GT
+    &LTtitle&GTHome&LT/title&GT
+&LT/head&GT
+&LT!-- ------------------------Navigation bar-------------------- --&GT
+&LTnav id="nav"&GT
+    &LTdiv id="navbar"&GT
+        &LTdiv id="logo"&GT
+            &LTh3&GTRDDN&LT/h3&GT
+        &LT/div&GT
+        &LTdiv id="nav-list"&GT
+            &LTul id="navbar-list"&GT
+                &LTli class="a-list"&GT&LTa href="#"&GTHome&LT/a&GT &LT/li&GT
+                &LTli class="a-list"&GT&LTa href="#"&GTIndex&LT/a&GT &LT/li&GT
+                &LTli class="a-list"&GT&LTa href="#"&GTAbout&LT/a&GT &LT/li&GT
+                &LTli class="a-list"&GT&LTa href="#"&GTContact&LT/a&GT &LT/li&GT
+            &LT/ul&GT
+        &LT/div&GT
+        &LTdiv id="socail-icons"&GT
+            &LTul id="icons"&GT
+                &LTli id="gmail" class="icons-list"&GT&LTa href="https://mail.google.com/mail/u/0/#inbox"&GT&LTi class="fa fa-envelope" aria-hidden="true"&GT&LT/i&GT&LT/a&GT &LT/li&GT
+                &LTli id="facebok" class="icons-list"&GT&LTa href="https://www.facebook.com/rupesh.thakurimalla"&GT&LTi class="fa fa-facebook-square" aria-hidden="true"&GT&LT/i&GT&LT/a&GT&LT/li&GT
+                &LTli id="instagram" class="icons-list"&GT&LTa href="https://www.instagram.com/rupeshthakurimalla/"&GT&LTi class="fa fa-instagram" aria-hidden="true"&GT&LT/i&GT&LT/a&GT&LT/li&GT
+            &LT/ul&GT
+        &LT/div&GT
+    &LT/div&GT
+&LT/nav&GT
+&LT!-- --------------x----------Navigation bar----------x---------- --&GT
+&LT!-- ---------------------------Section Part---------------------------------- --&GT
+&LTsection id="main"&GT
+    &LTdiv id="background"&GT
+        &LTh1 class="background-heading"&GTWelcome to my site.&LT/h1&GT
+        &LTp class="background-paragraph1"&GTI beleive&LT/p&GT
+        &LTp class="background-paragraph2"&GT "Hard works beats talent when talent doesnt work hard."&LT/p&GT
+        &LTdiv class="buttons"&GT
+            &LTbutton class="background-button"&GT&LTa href="#"&GT&LTstrong&GTAbout Me&LT/strong&GT&LT/a&GT&LT/button&GT
+            &LTbutton class="background-button"&GT&LTa href="#"&GT&LTstrong&GTContact&LT/strong&GT&LT/a&GT&LT/button&GT
+        &LT/div&GT
+    &LT/div&GT
+
+&LT/section&GT
+&LT!-- --------------------introduction Part------------------- --&GT
+&LTdiv class="introduction"&GT
+    &LTdiv class="box" id="box1"&GT&LT/div&GT
+    &LTdiv class="box" id="box2"&GT
+        &LTh2 class="heading-aboutme"&GTLet me introduce myself&LT/h2&GT
+        &LTspan class="line"&GT&LT/span&GT
+    &LT/div&GT
+    &LTdiv class="box" id="box3"&GT
+        &LTp&GTIts me Rupesh Thakuri. Its a part of my CV. A young blood of 20yrs young having a lot of dreams one of which is to make my family always happy. With a big ambition of being a software engineer I m currently studying BScCSIT. The college name is
+            Ambtion College. You can find me there if you want. I m currently jobless but really working hard on my skills so that i can achive my dreams soon.
+        &LT/p&GT
+        &LTbutton class="introduction-button"&GT&LTa href="#"&GT&LTstrong&GTMore Info --&GT&LT/strong&GT&LT/a&GT&LT/button&GT
+    &LT/div&GT
+&LT/div&GT
+&LT!-- ----------x----------introduction Part---------x---------- --&GT
+&LT!------------------- Intrest part------------- --&GT
+&LTdiv class="intrest"&GT
+    &LTdiv class="outside-box"&GT
+        &LTh1 class="intrest-heading"&GTThings I'm intrested in &LT/h1&GT
+        &LTp&GTI'm an average guy with not so much intrest in having entertainment neither too much booring.&LT/p&GT
+        &LTp&GTSee what I likes and what I not.&LT/p&GT
+    &LT/div&GT
+    &LTdiv class="intrest-grid"&GT
+        &LTdiv class="intrest-box" id="music"&GT
+            &LTdiv class="logo"&GT&LTi class="fa fa-music" aria-hidden="true"&GT&LT/i&GT&LT/div&GT
+            &LTh2 class="heading-insidebox"&GTMusic&LT/h2&GT
+            &LTp class="paragraphs-insidebox"&GTLorem ipsum dolor, sit amet consectetur adipisicing elit. Vero possimus ducimus modi quam omnis libero, porro dicta velit fugit officia maxime eligendi adipisci ipsam ratione? Quidem, temporibus cumque! Repellat, vitae?&LT/p&GT
+        &LT/div&GT
+        &LTdiv class="intrest-box" id="sports"&GT
+            &LTdiv class="logo"&GT&LTi class="fa fa-futbol-o" aria-hidden="true"&GT&LT/i&GT&LT/div&GT
+            &LTh2 class="heading-insidebox"&GTSports&LT/h2&GT
+            &LTp class="paragraphs-insidebox"&GTLorem ipsum dolor, sit amet consectetur adipisicing elit. Vero possimus ducimus modi quam omnis libero, porro dicta velit fugit officia maxime eligendi adipisci ipsam ratione? Quidem, temporibus cumque! Repellat, vitae?&LT/p&GT
+        &LT/div&GT
+        &LTdiv class="intrest-box" id="social"&GT
+            &LTdiv class="logo"&GT&LTi class="fa fa-handshake-o" aria-hidden="true"&GT&LT/i&GT&LT/div&GT
+            &LTh2 class="heading-insidebox"&GTSocial&LT/h2&GT
+            &LTp class="paragraphs-insidebox"&GTLorem ipsum dolor, sit amet consectetur adipisicing elit. Vero possimus ducimus modi quam omnis libero, porro dicta velit fugit officia maxime eligendi adipisci ipsam ratione? Quidem, temporibus cumque! Repellat, vitae?&LT/p&GT
+        &LT/div&GT
+        &LTdiv class="intrest-box" id="travel"&GT
+            &LTdiv class="logo"&GT&LTi class="fa fa-plane" aria-hidden="true"&GT&LT/i&GT&LT/div&GT
+            &LTh2 class="heading-insidebox"&GTTravel&LT/h2&GT
+            &LTp class="paragraphs-insidebox"&GTLorem ipsum dolor, sit amet consectetur adipisicing elit. Vero possimus ducimus modi quam omnis libero, porro dicta velit fugit officia maxime eligendi adipisci ipsam ratione? Quidem, temporibus cumque! Repellat, vitae?&LT/p&GT
+        &LT/div&GT
+        &LTdiv class="intrest-box" id="camara"&GT
+            &LTdiv class="logo"&GT&LTi class="fa fa-camera" aria-hidden="true"&GT&LT/i&GT&LT/div&GT
+            &LTh2 class="heading-insidebox"&GTCamara&LT/h2&GT
+            &LTp class="paragraphs-insidebox"&GTLorem ipsum dolor, sit amet consectetur adipisicing elit. Vero possimus ducimus modi quam omnis libero, porro dicta velit fugit officia maxime eligendi adipisci ipsam ratione? Quidem, temporibus cumque! Repellat, vitae?&LT/p&GT
+        &LT/div&GT
+        &LTdiv class="intrest-box" id="gaming"&GT
+            &LTdiv class="logo"&GT&LTi class="fa fa-gamepad" aria-hidden="true"&GT&LT/i&GT&LT/div&GT
+            &LTh2 class="heading-insidebox"&GTGaming&LT/h2&GT
+            &LTp class="paragraphs-insidebox"&GTLorem ipsum dolor, sit amet consectetur adipisicing elit. Vero possimus ducimus modi quam omnis libero, porro dicta velit fugit officia maxime eligendi adipisci ipsam ratione? Quidem, temporibus cumque! Repellat, vitae?&LT/p&GT
+        &LT/div&GT
+    &LT/div&GT
+    &LTdiv class="outside-box"&GT
+        &LTh2&GTWanna know more about me??&LT/h2&GT
+        &LTbutton class="outsidebox-button"&GT&LTa href=""&GT&LTstrong&GTContact Me&LT/strong&GT&LT/a&GT&LT/button&GT
+    &LT/div&GT
+&LT/div&GT
+&LT!------------x----- Intrest part----------------x-------- --&GT
+&LT!-- ---------------Some pictures to add----------- --&GT
+&LTdiv class="imagesinsert"&GT
+    &LTh2&GTSome images thait i would love to share&LT/h2&GT
+    &LTdiv class="image-section"&GT
+        &LTdiv class="images-grid" id="box10"&GT&LT/div&GT
+        &LTdiv class="images-grid" id="box11"&GT&LT/div&GT
+        &LTdiv class="images-grid" id="box12"&GT&LT/div&GT
+        &LTdiv class="images-grid" id="box13"&GT&LT/div&GT
+        &LTdiv class="images-grid" id="box14"&GT&LT/div&GT
+        &LTdiv class="images-grid" id="box15"&GT&LT/div&GT
+    &LT/div&GT
+&LT/div&GT
+&LT!-- ---------x------Some pictures to add-x---------- --&GT
+&LT!-- ---------------x------------Section Part--------------------x-------------- --&GT
+&LT!-- -----------------------Footer part---------------- --&GT
+&LTdiv class="lastfooter"&GT
+    &LTdiv id="logo"&GT
+        &LTh3&GTRDDN&LT/h3&GT
+    &LT/div&GT
+    &LTp&GT© 2020 Rupesh Thakuri —@rupeshthakuri16@gmail.com&LT/p&GT
+    &LTdiv id="socail-icons" class="iconsfooter"&GT
+        &LTul id="icons"&GT
+            &LTli id="gmail" class="icons-list"&GT&LTa href="https://mail.google.com/mail/u/0/#inbox"&GT&LTi class="fa fa-envelope" aria-hidden="true"&GT&LT/i&GT&LT/a&GT &LT/li&GT
+            &LTli id="facebok" class="icons-list"&GT&LTa href="https://www.facebook.com/rupesh.thakurimalla"&GT&LTi class="fa fa-facebook-square" aria-hidden="true"&GT&LT/i&GT&LT/a&GT&LT/li&GT
+            &LTli id="instagram" class="icons-list"&GT&LTa href="https://www.instagram.com/rupeshthakurimalla/"&GT&LTi class="fa fa-instagram" aria-hidden="true"&GT&LT/i&GT&LT/a&GT&LT/li&GT
+        &LT/ul&GT
+    &LT/div&GT
+&LT/div&GT
+&LT!-- --------------x---------Footer part---------x------- --&GT
+
+&LTbody&GT
+
+&LT/body&GT
+
+&LT/html&GT
+                </code>
+            </pre>
+                <h2>Here is the CSS code</h2>
+                <pre class="language-css">
+                <code>
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+/* ------------Navbar styling ----------------*/
+
+#navbar {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #49bfbf;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em;
+}
+
+#logo {
+    margin-left: 20px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#nav-list {
+    margin-left: 640px;
+}
+
+#navbar-list {
+    display: flex;
+}
+
+#navbar-list li a {
+    font-family: 'Sansita Swashed', cursive;
+    margin: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+#icons {
+    display: flex;
+    padding-left: 150px;
+}
+
+.icons-list a {
+    margin-left: 30px;
+    color: black;
+}
+/* ---------X---Navbar styling ------X----------*/
+/* ------------Section part ----------------*/
+
+#main {
+    background: url(/background/bg1.jpg);
+    height: 600px;
+}
+
+#background {
+    padding-top: 10%;
+    text-align: 50px;
+}
+
+.background-heading {
+    font-size: 60px;
+    padding-left: 60px;
+    font-family: 'Lora', serif;
+}
+
+.background-paragraph1 {
+    font-size: 30px;
+    padding-left: 220px;
+    font-family: 'Lora', serif;
+}
+
+.background-paragraph2 {
+    font-size: 20px;
+    padding-left: 100px;
+    font-family: 'Lora', serif;
+}
+
+.buttons {
+    margin-left: 154px;
+    margin-top: 8px;
+}
+
+.background-button {
+    padding: 7px 20px;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    background-color: #35d1dd;
+}
+
+.background-button a {
+    color: black;
+}
+/* ---------------Introduction part------------ */
+
+.introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    margin-top: 60px;
+}
+
+#box1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(/profile/prfilerotated.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75%;
+    margin-left: 120px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    ;
+    ;
+}
+
+#box2 {
+    font-family: 'Lora', serif;
+}
+
+.line {
+    background-color: black;
+}
+
+#box2 .heading-aboutme {
+    padding-top: 90px;
+}
+
+#box3 {
+    font-family: 'Lora', serif;
+    margin-right: 80px;
+    line-height: 30px;
+}
+
+.introduction-button {
+    padding: 7px 20px;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    background-color: #35d1dd;
+}
+
+.introduction-button a {
+    color: black;
+}
+/* ----x-----------Introduction part----------X-- */
+/*---------------- Intrested field----------------- */
+
+.outside-box {
+    margin: 20px;
+}
+
+.outside-box p {
+    font-size: 20px;
+}
+
+.intrest .outside-box {
+    margin-top: 120px;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.intrest-grid {
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.intrest-box {
+    border-radius: 10px;
+    line-height: 30px;
+    border: 1px solid gray;
+    margin: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+.outsidebox-button {
+    padding: 7px 20px;
+    margin: 10px;
+    width: 240px;
+    font-family: 'Lora', serif;
+    background-color: #35d1dd;
+}
+
+.outsidebox-button a {
+    color: black;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+/*----------x------ Intrested field----------x------- */
+/* ----------Images to share with--------- */
+
+.imagesinsert {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.imagesinsert h2 {
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    margin-bottom: 30px;
+}
+
+.image-section {
+    display: grid;
+    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 50px;
+    grid-auto-rows: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.image-section div {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#box10 {
+    background: url(/background/412419.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#box11 {
+    background: url(/background/50b1e42f5e4deff2d8c9cb40ca783433.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#box12 {
+    background: url(/background/706f281185a1aaf62f59f7abbb76bdc1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    border: 1px solid gray;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#box13 {
+    background: url(/background/backgroundmot.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border: 1px solid gray;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#box14 {
+    background: url(/background/business-woman-working-laptop_1388-91.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#box15 {
+    background: url(/background/creative-work-place-desk-copy-space_67155-1689.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+/* ----x------Images to share with------x--- */
+/* ---------X---Section Part ------X----------*/
+/*----------------- Footer part------------ */
+
+.lastfooter {
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    background-color: turquoise;
+}
+
+.lastfooter p {
+    margin-left: 420px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.iconsfooter ul {
+    margin-left: 200px;
+}
+/*-----------x------ Footer part-------x----- */
+                </code>
+            </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nav js -->
+    <script src="./indexjs.js"></script>
+    <!-- Prism js -->
+    <script src="./prism/prism.js"></script>
+</body>
+
+</html>

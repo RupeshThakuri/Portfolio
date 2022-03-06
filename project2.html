@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking words-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!--Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Css Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking prism -->
+    <link rel="stylesheet" href="./prism/prism.css">
+    <title>Project 2</title>
+</head>
+
+<body>
+    <section id="nav">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="./images/whitelogo.png" alt="">
+            </div>
+            <div class="navbar__navlinks">
+                <ul class="navbar__navlinks-main">
+                    <div class="close__div">
+                        <li><a class="close"><i class="fas fa-times"></i></a></li>
+                    </div>
+                    <li><a href="./index.html#home" class="nav__link">Home</a></li>
+                    <li><a href="./index.html#about" class="nav__link">About</a></li>
+                    <li><a href="./index.html#Projects" class="nav__link">Projects</a></li>
+                    <li><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+                    <div class="navbar__navlinks-main--social-links">
+                        <li><a href="https://www.facebook.com/rupesh.thakurimalla"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/rupeshthakuri16/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rupesh-thakuri-39b9a7202/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    </div>
+                </ul>
+                <a class="hamburger"><i class="fas fa-bars"></i></a>
+                <a href="./MYFinalCV.pdf" download="" class="CV">My CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- Content Part -->
+    <section id="content_part">
+        <div class="content">
+            <div class="project_nameDisplay">
+                <h2>#Project 2</h2>
+                <p>Glowing Dots On Hover</p>
+            </div>
+
+            <div class="video_box">
+                <video class="video" poster="./projects/projectImg/project2.png" src="./projects/projectVid/project2.mp4" controls></video>
+            </div>
+            <div class="discription">
+                <h2 class="discription_heading"><strong> Idea and description</strong></h2>
+                <p>From a video on youtube I get an idea to have a project where some dots are made glowing when hovred by a mouse.Sound intrestig right? you can see how that works in above video or going through this
+                    <a href="https://www.youtube.com/watch?v=4GfKFi4lb4U&t=101s&ab_channel=OnlineTutorials" target="_blank">link</a> too.
+                </p>
+                <p>To make it more excited I changed some of the border shadow.
+                </p>
+            </div>
+            <div class="html_code">
+                <h2>Here is the HTML code.</h2>
+                <pre class="language-html">
+                <code>
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltlink rel="stylesheet" href="glowingdotsonhover.css"&gt
+    &lttitle&gtDocument&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    &ltul&gt
+        &ltli&gt1&lt/li&gt
+        &ltli&gt2&lt/li&gt
+        &ltli&gt3&lt/li&gt
+        &ltli&gt4&lt/li&gt
+        &ltli&gt5&lt/li&gt
+    &lt/ul&gt
+&lt/body&gt
+&lt/html&gt
+                </code>
+            </pre>
+                <h2>Here is the CSS code</h2>
+                <pre class="language-css">
+                <code>
+
+body{
+    background: gray;
+}
+ul{
+    display: flex;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    margin: 0 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    text-align: center;
+    color: #000635;
+    transition: .5s;
+}
+ul li:hover{
+    background: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                0 0 20px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1),
+                0 0 0 75px rgba(255, 255, 255, 0.05),
+                0 0 0 60px rgba(255, 255, 255, 0.05),
+                0 0 0 45px rgba(255, 255, 255, 0.05),
+                0 0 0 30px rgba(255, 255, 255, 0.05),
+                0 0 0 15px rgba(255, 255, 255, 0.05);
+}
+                </code>
+            </pre>
+            </div>
+        </div>
+    </section>
+    <!-- Contact or Footer section -->
+
+    <!-- Nav js -->
+    <script src="./indexjs.js"></script>
+    <!-- Prism js -->
+    <script src="./prism/prism.js"></script>
+</body>
+
+</html>

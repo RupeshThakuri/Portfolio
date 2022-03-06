@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking words-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!--Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Css Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking prism -->
+    <link rel="stylesheet" href="./prism/prism.css">
+    <title>Project 1</title>
+</head>
+
+<body>
+    <section id="nav">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="./images/whitelogo.png" alt="">
+            </div>
+            <div class="navbar__navlinks">
+                <ul class="navbar__navlinks-main">
+                    <div class="close__div">
+                        <li><a class="close"><i class="fas fa-times"></i></a></li>
+                    </div>
+                    <li><a href="./index.html#home" class="nav__link">Home</a></li>
+                    <li><a href="./index.html#about" class="nav__link">About</a></li>
+                    <li><a href="./index.html#Projects" class="nav__link">Projects</a></li>
+                    <li><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+                    <div class="navbar__navlinks-main--social-links">
+                        <li><a href="https://www.facebook.com/rupesh.thakurimalla"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/rupeshthakuri16/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rupesh-thakuri-39b9a7202/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    </div>
+                </ul>
+                <a class="hamburger"><i class="fas fa-bars"></i></a>
+                <a href="./MYFinalCV.pdf" download="" class="CV">My CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- Content Part -->
+    <section id="content_part">
+        <div class="content">
+            <div class="project_nameDisplay">
+                <h2>#Project 1</h2>
+                <p>Flipping card hover effect.</p>
+            </div>
+
+            <div class="video_box">
+                <video class="video" poster="./projects/projectImg/project1.png" src="./projects/projectVid/project1.mp4" controls></video>
+            </div>
+            <div class="discription">
+                <h2 class="discription_heading"><strong> Idea and description</strong></h2>
+                <p>From a video on youtube I get an idea to have a project where a card is flipped on hovering. Sound intrestig right? you can see how that works in above video or going through this
+                    <a href="https://www.youtube.com/watch?v=uR7EbQImYmo&t=256s&ab_channel=DarkCode" target="_blank">link</a> too.
+                </p>
+                <p>To make it more excited we can see the social media icons which is shown at the back when the card is flipped.
+                </p>
+            </div>
+            <div class="html_code">
+                <h2>Here is the HTML code.</h2>
+                <pre class="language-html">
+                    <code>
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltlink rel="stylesheet" href="flippingcardhovereffect.css"&gt
+    &ltlink rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"&gt
+    &lttitle&gtflipping card hover effect&lt/title&gt
+&lt/head&gt
+
+&ltbody&gt
+    &ltdiv class="card"&gt
+        &ltdiv class="front"&gt&ltimg src="/1.jpg" alt=""&gt&lt/div&gt
+        &ltdiv class="back"&gt
+                &lth2&gtRupesh Thakuri &ltbr&gt
+                    &ltspan&gtIT student&lt/span&gt
+                &lt/h2&gt
+                &ltdiv class="social-icons"&gt
+                    &lta href=""&gt&lti class="fa fa-facebook-official" aria-hidden="true"&gt&lt/i&gt&lt/a&gt
+                    &lta href=""&gt&lti class="fa fa-instagram" aria-hidden="true"&gt&lt/i&gt&lt/a&gt
+                    &lta href=""&gt&lti class="fa fa-twitter" aria-hidden="true"&gt&lt/i&gt&lt/a&gt
+                    &lta href=""&gt&lti class="fa fa-google" aria-hidden="true"&gt&lt/i&gt&lt/a&gt
+                &lt/div&gt
+            &lt/div&gt
+        &lt/div&gt
+    &lt/div&gt
+&lt/body&gt
+
+&lt/html&gt
+                    </code>
+                </pre>
+                <h2>Here is the CSS code</h2>
+                <pre class="language-css">
+                    <code>
+.card{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    height: 300px;
+    width: 400px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+.card .front img{
+    height: 300px;
+    width: 400px;
+}
+.card .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    transform: rotateX(0deg);
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.card:hover .front{
+    transform: rotateX(180deg); 
+}
+.card .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: #000;
+    transform: rotateX(180deg);
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.card:hover .back{
+    transform: rotateX(0deg); 
+}
+.back{
+    color: white;
+    text-align: center;
+}
+.back h2, .back span{
+    margin-top: 90px;
+}
+.social-icons a{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.back span{
+    font-size: 16px;
+    color: gray;
+}
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nav js -->
+    <script src="./indexjs.js"></script>
+    <!-- Prism js -->
+    <script src="./prism/prism.js"></script>
+</body>
+
+</html>

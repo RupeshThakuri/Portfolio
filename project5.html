@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking words-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!--Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Css Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking prism -->
+    <link rel="stylesheet" href="./prism/prism.css">
+    <title>Project 5</title>
+</head>
+
+<body>
+    <section id="nav">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="./images/whitelogo.png" alt="">
+            </div>
+            <div class="navbar__navlinks">
+                <ul class="navbar__navlinks-main">
+                    <div class="close__div">
+                        <li><a class="close"><i class="fas fa-times"></i></a></li>
+                    </div>
+                    <li><a href="./index.html#home" class="nav__link">Home</a></li>
+                    <li><a href="./index.html#about" class="nav__link">About</a></li>
+                    <li><a href="./index.html#Projects" class="nav__link">Projects</a></li>
+                    <li><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+                    <div class="navbar__navlinks-main--social-links">
+                        <li><a href="https://www.facebook.com/rupesh.thakurimalla"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/rupeshthakuri16/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rupesh-thakuri-39b9a7202/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    </div>
+                </ul>
+                <a class="hamburger"><i class="fas fa-bars"></i></a>
+                <a href="./MYFinalCV.pdf" download="" class="CV">My CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- Content Part -->
+    <section id="content_part">
+        <div class="content">
+            <div class="project_nameDisplay">
+                <h2>#Project 5</h2>
+                <p>Custom Checkbox</p>
+            </div>
+
+            <div class="video_box">
+                <video class="video" poster="./projects/projectImg/project5.png" src="./projects/projectVid/project5.mp4" controls></video>
+            </div>
+            <div class="discription">
+                <h2 class="discription_heading"><strong> Idea and description</strong></h2>
+                <p>From a video on youtube I get an idea to have a project where the so seems button Checkbox is changed with a beautiful effect. Sound intrestig right? you can see how that works in above video or going through this
+                    <a href="https://www.youtube.com/watch?v=z3TgmTi42ic&t=17s&ab_channel=OnlineTutorials" target="_blank">link</a> too.
+                </p>
+                <p>To make it more excited I changed some border and shadow. Have a look!
+                </p>
+            </div>
+            <div class="html_code">
+                <h2>Here is the HTML code.</h2>
+                <pre class="language-html">
+                <code>
+&LT!DOCTYPE html&GT
+&LThtml lang="en"&GT
+&LThead&GT
+    &LTmeta charset="UTF-8"&GT
+    &LTmeta name="viewport" content="width=device-width, initial-scale=1.0"&GT
+    &LTlink rel="stylesheet" href="PureCSSCustomCheckBox.css"&GT
+    &LTtitle&GTPureCSSCustomCheckBox&LT/title&GT
+&LT/head&GT
+&LTbody&GT
+    &LTdiv class="center"&GT
+        &LTinput type="checkbox"&GT
+    &LT/div&GT
+&LT/body&GT
+&LT/html&GT
+                </code>
+            </pre>
+                <h2>Here is the CSS code</h2>
+                <pre class="language-css">
+                <code>
+*{
+    background-color: gray;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input[type="checkbox"]{
+    height: 40px;
+    width: 120px;
+    position: relative;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), 
+    inset 0 0 15px rgba(0, 0, 0, .2) ;
+}
+input:checked[type="checkbox"]{
+    background: linear-gradient(0deg, #6dd1ff, #20b7ff);
+    box-shadow: 0 0 2px #6dd1ff,0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), 
+    inset 0 0 15px rgba(0, 0, 0, .2) ;
+}
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98,.96);
+    transition: .5s;
+}
+input:checked[type="checkbox"]::before{
+    left: 40px;
+}
+input[type="checkbox"]::after{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 65px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(0deg,#6b6b6b, #000);
+    border-radius: 50%;
+    transition: .5s;
+}
+input:checked[type="checkbox"]::after{
+    background: #63cdff;
+    left: 105px;
+    box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
+}
+                    
+                </code>
+            </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nav js -->
+    <script src="./indexjs.js"></script>
+    <!-- Prism js -->
+    <script src="./prism/prism.js"></script>
+</body>
+
+</html>

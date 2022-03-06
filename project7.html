@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking words-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!--Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Css Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking prism -->
+    <link rel="stylesheet" href="./prism/prism.css">
+    <title>Project 7</title>
+</head>
+
+<body>
+    <section id="nav">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="./images/whitelogo.png" alt="">
+            </div>
+            <div class="navbar__navlinks">
+                <ul class="navbar__navlinks-main">
+                    <div class="close__div">
+                        <li><a class="close"><i class="fas fa-times"></i></a></li>
+                    </div>
+                    <li><a href="./index.html#home" class="nav__link">Home</a></li>
+                    <li><a href="./index.html#about" class="nav__link">About</a></li>
+                    <li><a href="./index.html#Projects" class="nav__link">Projects</a></li>
+                    <li><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+                    <div class="navbar__navlinks-main--social-links">
+                        <li><a href="https://www.facebook.com/rupesh.thakurimalla"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/rupeshthakuri16/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rupesh-thakuri-39b9a7202/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    </div>
+                </ul>
+                <a class="hamburger"><i class="fas fa-bars"></i></a>
+                <a href="./MYFinalCV.pdf" download="" class="CV">My CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- Content Part -->
+    <section id="content_part">
+        <div class="content">
+            <div class="project_nameDisplay">
+                <h2>#Project 7</h2>
+                <p>Mero Share Duplicate</p>
+            </div>
+
+            <div class="video_box">
+                <video class="video" poster="./projects/projectImg/project7.png" src="./projects/projectVid/project7.mp4" controls></video>
+            </div>
+            <div class="discription">
+                <h2 class="discription_heading"><strong> Idea and description</strong></h2>
+                <p>Being a Nepali and hype of share market nowadays i got an idea to built a website for Mero Share Duplicate taking the idea of its official website. I added some features of logging and other but still cant make it responsive and also have
+                    a lot of problems. Hope to improve in the upcoming time of coding.
+                </p>
+                <p>To make it more excited I added some logo designing through a website. Sound intresting right? Have a look!
+                </p>
+            </div>
+            <div class="html_code">
+                <h2>Here is the HTML code for login site.</h2>
+                <pre class="language-html">
+                <code>
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltlink rel="stylesheet" href="style.css"&gt
+    &ltscript src="https://kit.fontawesome.com/0e1021997f.js" crossorigin="anonymous"&gt&lt/script&gt
+    
+    &lttitle&gtLogin&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    &ltdiv class="login-box"&gt
+        &ltdiv class="image"&gt
+            &ltimg src="./logo.png" alt=""&gt
+        &lt/div&gt
+        &ltdiv class="text-areas"&gt
+            &ltdiv class="logoWithHeading"&gt
+                &lti class="fas fa-money-check"&gt&lt/i&gt
+                &ltp&gtDepository Participants&lt/p&gt
+            &lt/div&gt
+            &ltselect name="Select your DP" id=""&gt
+                &ltoption value=""&gt&lt/option&gt
+                &ltoption value="Agriculture Development Bank"&gtAgriculture Development Bank&lt/option&gt
+                &ltoption value="Nabil Bank Limited"&gtNabil Bank Limited&lt/option&gt
+                &ltoption value="Naepal Bank Limited"&gtNepal Bank Limited&lt/option&gt
+                &ltoption value="Everest Bank Limited"&gtEverest Bank Limited&lt/option&gt
+                &ltoption value="Global Bank Limited"&gtGlobal Bank Limited&lt/option&gt
+                &ltoption value="NIC Asia Bank"&gtNIC Asia Bank&lt/option&gt
+                &ltoption value="Prabhu Bank Limited"&gtPrabhu Bank Limited&lt/option&gt
+            &lt/select&gt
+            &ltdiv class="logoWithHeading"&gt
+                &lti class="fas fa-user"&gt&lt/i&gt
+                &ltp&gtUsername&lt/p&gt              
+            &lt/div&gt 
+            &ltinput class="box" type="text"&gt
+            &ltdiv class="logoWithHeading"&gt
+                &lti class="fas fa-unlock-alt"&gt&lt/i&gt
+                &ltp&gtPassowrd&lt/p&gt
+            &lt/div&gt
+            &ltinput class="box" type="password"&gt
+        &lt/div&gt
+        &ltdiv class="button"&gt
+            &ltbutton&gt&lta href="./dashboard.html"&gtLogin&lt/a&gt&lt/button&gt
+        &lt/div&gt
+        &ltdiv class="login-footer"&gt
+            &lta href=""&gtForget your password?&lt/a&gt
+        &lt/div&gt
+    &lt/div&gt
+    &ltdiv class="footer"&gt
+        &copy; 2021 CDS and Clearing Limited. All Rights Reserved
+    &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+                </code>
+            </pre>
+                <h2>Here is the HTML code for dashboard site.</h2>
+                <pre class="language-html">
+                <code>
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltlink rel="stylesheet" href="./dashboard.css"&gt
+    &ltscript src="https://kit.fontawesome.com/0e1021997f.js" crossorigin="anonymous"&gt&lt/script&gt
+    &lttitle&gtDashboard&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    &ltmenu&gt
+        &ltdiv class="menue-box"&gt
+            &ltdiv class="logo"&gt
+                &ltimg src="./logo.png" alt=""&gt
+            &lt/div&gt
+            &ltul class="menue-list"&gt
+                &ltli&gt&lti class="fas fa-home"&gt&lt/i&gt&lta href="./dashboard.html"&gtDashboard&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="far fa-address-card"&gt&lt/i&gt&lta href="./MyDetail.html"&gtMy Details&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="fas fa-chart-line"&gt&lt/i&gt&lta href=""&gtMy Shares&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="fas fa-redo-alt"&gt&lt/i&gt&lta href=""&gtMy Transection History&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="far fa-address-card"&gt&lt/i&gt&lta href=""&gtMy Portfolio&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="far fa-address-card"&gt&lt/i&gt&lta href=""&gtMy Pledge Share Detail&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="far fa-comment-alt"&gt&lt/i&gt&lta href=""&gtMy Bank Request&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="fas fa-globe"&gt&lt/i&gt&lta href=""&gtMy ASBA&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="fas fa-shopping-cart"&gt&lt/i&gt&lta href=""&gtMy Purchase Source&lt/a&gt&lt/li&gt
+                &ltli&gt&lti class="fas fa-exchange-alt"&gt&lt/i&gt&lta href=""&gtMy EDIS&lt/a&gt&lt/li&gt
+            &lt/ul&gt
+            &ltdiv class="menue-footer"&gt
+                &ltp&gt© 2021 CDS and Clearing Limited.&lt/p&gt
+                &ltp&gtAll Rights Reserved&lt/p&gt
+            &lt/div&gt
+        &lt/div&gt
+        &ltdiv class="burger-menue"&gt
+            &lta href=""&gt&lti class="fas fa-bars"&gt&lt/i&gt&lt/a&gt
+            &lta href="./index.html"&gt&lti class="fas fa-sign-out-alt logout"&gt&lt/i&gt&lt/a&gt
+            &lta href=""&gt&lti class="fas fa-user user"&gt&lt/i&gt&lt/a&gt
+            &ltdiv class="detail"&gt
+                &ltp for="" class="label1"&gt&ltb&gtRUPESH THAKURI&lt/b&gt&lt/p&gt
+                &ltp for="" class="label2"&gtMERO SHARE PROFILE&lt/p&gt
+            &lt/div&gt
+        &lt/div&gt
+    &lt/menu&gt
+&lt/body&gt
+&lt/html&gt
+                </code>
+            </pre>
+                <h2>Here is the HTML code for My Detail site.</h2>
+                <pre class="language-html">
+                <code>
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltlink rel="stylesheet" href="./MyDetail.css"&gt
+    &ltscript src="https://kit.fontawesome.com/0e1021997f.js" crossorigin="anonymous"&gt&lt/script&gt
+    &lttitle&gtMy Details&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    &ltmenu&gt
+        &ltdiv class="left-section"&gt
+            &ltdiv class="menue-box"&gt
+                &ltdiv class="logo"&gt
+                    &ltimg src="./logo.png" alt=""&gt
+                &lt/div&gt
+                &ltul class="menue-list"&gt
+                    &ltli&gt&lti class="fas fa-home"&gt&lt/i&gt&lta href="./dashboard.html"&gtDashboard&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="far fa-address-card"&gt&lt/i&gt&lta href="./MyDetail.html"&gtMy Details&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="fas fa-chart-line"&gt&lt/i&gt&lta href=""&gtMy Shares&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="fas fa-redo-alt"&gt&lt/i&gt&lta href=""&gtMy Transection History&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="far fa-address-card"&gt&lt/i&gt&lta href=""&gtMy Portfolio&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="far fa-address-card"&gt&lt/i&gt&lta href=""&gtMy Pledge Share Detail&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="far fa-comment-alt"&gt&lt/i&gt&lta href=""&gtMy Bank Request&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="fas fa-globe"&gt&lt/i&gt&lta href=""&gtMy ASBA&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="fas fa-shopping-cart"&gt&lt/i&gt&lta href=""&gtMy Purchase Source&lt/a&gt&lt/li&gt
+                    &ltli&gt&lti class="fas fa-exchange-alt"&gt&lt/i&gt&lta href=""&gtMy EDIS&lt/a&gt&lt/li&gt
+                &lt/ul&gt
+                &ltdiv class="menue-footer"&gt
+                    &ltp&gt© 2021 CDS and Clearing Limited.&lt/p&gt
+                    &ltp&gtAll Rights Reserved&lt/p&gt
+                &lt/div&gt
+            &lt/div&gt
+        &lt/div&gt
+        &ltdiv class="rigt-section"&gt
+            &ltdiv class="burger-menue"&gt
+                &lta href=""&gt&lti class="fas fa-bars"&gt&lt/i&gt&lt/a&gt
+                &lta href="/index.html"&gt&lti class="fas fa-sign-out-alt logout"&gt&lt/i&gt&lt/a&gt
+                &lta href=""&gt&lti class="fas fa-user user"&gt&lt/i&gt&lt/a&gt
+                &ltdiv class="detail"&gt
+                    &ltp for="" class="label1"&gt&ltb&gtRUPESH THAKURI&lt/b&gt&lt/p&gt
+                    &ltp for="" class="label2"&gtMERO SHARE PROFILE&lt/p&gt
+                &lt/div&gt
+            &lt/div&gt
+            &ltdiv class="main-section"&gt
+                &ltdiv class="top-section"&gt
+                    &ltdiv class="top-left-part"&gt
+                        &lth3&gtMy details&lt/h3&gt
+                        &ltp&gtView your details&lt/p&gt 
+                    &lt/div&gt
+                    &ltdiv class="top-right-part"&gt
+                        &ltbutton&gt&lta href=""&gt&lti class="fas fa-file-pdf"&gt&lt/i&gt&ltspan&gtPDF&lt/span&gt &lt/a&gt&lt/button&gt
+                        &ltbutton&gt&lta href=""&gt&lti class="fas fa-download"&gt&lt/i&gt&ltspan&gtCSV&lt/span&gt &lt/a&gt&lt/button&gt
+                        &ltbutton&gt&lta href=""&gt&lti class="fas fa-print"&gt&lt/i&gt&ltspan&gtPrint&lt/span&gt &lt/a&gt&lt/button&gt
+                        &ltdiv class="joint-part"&gt
+                            &ltp&gtLinked Account&lt/p&gt 
+                            &ltselect name="" id=""&gt
+                                &ltoption value=""&gt----Self----&lt/option&gt
+                            &lt/select&gt
+                        &lt/div&gt
+                    &lt/div&gt                    
+                &lt/div&gt
+                &ltdiv class="body-section"&gt
+                    &ltdiv class="box1"&gt
+                        &ltspan class="span1"&gtDP Name&lt/span&gt
+                        &ltspan class="span2"&gtBank Name&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box2"&gt
+                        &ltspan class="span1"&gtBOID&lt/span&gt
+                        &ltspan class="span2"&gt123456789101112&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box3"&gt
+                        &ltspan class="span1"&gtName&lt/span&gt
+                        &ltspan class="span2"&gtUser Name&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box4"&gt
+                        &ltspan class="span1"&gtAccount Status&lt/span&gt
+                        &ltspan class="span2"&gtActive or Unactive&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box5"&gt
+                        &ltspan class="span1"&gtBO Sub Status&lt/span&gt
+                        &ltspan class="span2"&gtIndividual Resident&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box6"&gt
+                        &ltspan class="span1"&gtConformation Waved&lt/span&gt
+                        &ltspan class="span2"&gtYes or No&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box7"&gt
+                        &ltspan class="span1"&gtGender&lt/span&gt
+                        &ltspan class="span2"&gtMale/Female/others&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box8"&gt
+                        &ltspan class="span1"&gtDOB&lt/span&gt
+                        &ltspan class="span2"&gt Date of birth&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box9"&gt
+                        &ltspan class="span1"&gtCitizenship Number&lt/span&gt
+                        &ltspan class="span2"&gt012345678910&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box10"&gt
+                        &ltspan class="span1"&gtPAN number&lt/span&gt
+                        &ltspan class="span2"&gtN/A&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box11"&gt
+                        &ltspan class="span1"&gtFathers / MOthers name&lt/span&gt
+                        &ltspan class="span2"&gtGuardian Name&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box12"&gt
+                        &ltspan class="span1"&gtSpouses/ Grandfathers name&lt/span&gt
+                        &ltspan class="span2"&gtWife or grnadfathers name&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box13"&gt
+                        &ltspan class="span1"&gtAccount open date&lt/span&gt
+                        &ltspan class="span2"&gt2000/7/13&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box14"&gt
+                        &ltspan class="span1"&gtContact Number&lt/span&gt
+                        &ltspan class="span2"&gt98123123123&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box15"&gt
+                        &ltspan class="span1"&gtEmail&lt/span&gt
+                        &ltspan class="span2"&gtsomehting@gmail.com&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box16"&gt
+                        &ltspan class="span1"&gtAddress&lt/span&gt
+                        &ltspan class="span2"&gtLocation&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box17"&gt
+                        &ltspan class="span1"&gtBank Name&lt/span&gt
+                        &ltspan class="span2"&gtName of bank&lt/span&gt
+                    &lt/div&gt
+                    &ltdiv class="box18"&gt
+                        &ltspan class="span1"&gtAccount Number&lt/span&gt
+                        &ltspan class="span2"&gt1231232131243897&lt/span&gt
+                    &lt/div&gt
+                &lt/div&gt
+            &lt/div&gt
+        &lt/div&gt
+    &lt/menu&gt
+&lt/body&gt
+&lt/html&gt
+                </code>
+            </pre>
+
+                <h2>Here is the CSS code for login section.</h2>
+                <pre class="language-css">
+                <code>
+/* For body */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: "Roboto Condensed",sans-serif;
+}
+body{
+    background-color: #343d61;
+    font-family: "Roboto Condensed",sans-serif;
+}
+/* logo */
+.image{
+    text-align: center;
+}
+/* For text-area and headings */
+.login-box{
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%,-50%);
+    height: 550px;
+    width: 460px;
+    box-shadow: 2px 6px 15px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+input,select{
+    padding-left: 15px;
+}
+.logoWithHeading{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.logoWithHeading i{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.logoWithHeading p{
+    margin-bottom: 4px;
+}
+.box,button,select{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 40px;
+    width: 80%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    border: none;
+    outline: none;
+}
+select{
+    width: 83%;
+}
+select option{
+    color: black;
+}
+/* for login button */
+button{
+    width: 84%;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color: #6e7db0;
+    text-align: center;
+}
+/* login footer */
+.login-footer{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.footer{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+                </code>
+            </pre>
+                <h2>Here is the CSS code for dashboard section.</h2>
+                <pre class="language-css">
+                <code>
+/* For body */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: "Roboto Condensed",sans-serif;
+}
+body{
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: "Roboto Condensed",sans-serif;
+    background-color: #f0f3f5;
+}
+menu{
+    display: flex;
+}
+/* Dashboard menue */
+.menue-box{
+    background-color: #333a56;
+    width: 20%;
+    height: 100%;
+}
+.menue-list a{
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+}
+.menue-list li{
+    margin-bottom: 10px;
+}
+li i{
+    color: white;
+    margin-left: 10px;
+}
+.menue-footer{
+    margin-top: 9.2rem;
+    padding-bottom: 8px;
+}
+.menue-footer p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* burger menue button */
+.burger-menue a i{
+    font-size: 20px;
+    color: black;
+    padding-left: 35px;
+    padding-top: 25px; 
+    padding-bottom: 30px;
+}
+.burger-menue{
+    box-shadow: 2px 6px 15px rgb(0 0 0 / 30%);
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+.logout{
+    margin-left: 800px;
+}
+.user{
+    color: gray;
+}
+.detail{
+    margin-left: 15px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.detail .label1{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.detail .label2{
+    font-size: 12px;
+}
+                </code>
+            </pre>
+                <h2>Here is the CSS code for My Detail section.</h2>
+                <pre class="language-css">
+                <code>
+/* For body */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: "Roboto Condensed",sans-serif;
+}
+body{
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: "Roboto Condensed",sans-serif;
+    background-color: #f0f3f5;
+    display: flex;
+}
+menu{
+    display: flex;
+}
+/* Dashboard menue */
+/* left section */
+.menue-box{
+    background-color: #333a56;
+    width: 100%;
+    height: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.menue-list a{
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+}
+.menue-list li{
+    margin-bottom: 10px;
+}
+li i{
+    color: white;
+    margin-left: 10px;
+}
+.menue-footer{
+    margin-top: 7rem;
+    padding-bottom: 8px;
+}
+.menue-footer p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* right section */
+/* burger menue button */
+.burger-menue a i{
+    font-size: 20px;
+    color: black;
+    padding-left: 35px;
+    padding-top: 25px; 
+    padding-bottom: 30px;
+}
+.burger-menue{
+    box-shadow: 2px 6px 15px rgb(0 0 0 / 30%);
+    display: flex;
+    height: 60px;
+    width: 102.2%;
+}
+.logout{
+    margin-left: 800px;
+}
+.user{
+    color: gray;
+}
+.detail{
+    margin-left: 15px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.detail .label1{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.detail .label2{
+    font-size: 12px;
+}
+/*  right part body/ main section*/
+.top-section{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.top-left-part{
+    width: 121px;
+}
+.top-right-part{
+    margin-left: 530px;
+    display: flex;
+}
+.top-right-part button a{
+    color: black;
+}
+.top-right-part button a i{
+    padding-right: 5px;
+}
+.top-right-part button{
+    height: 30px;
+    width: 70px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.joint-part{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    height: 27px;
+    width: 215px;
+    border-radius: 5px;
+}
+.joint-part p{
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    height: 20px;
+    width: 125px;
+    text-align: center;
+    padding-top: 7px;
+}
+.joint-part select{
+    height: 29px;
+}
+/* bottom part */
+.body-section{
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 1px;
+    font-size: 12px;
+    margin-bottom: 60px;
+}
+.body-section div{
+    margin-top: 20px;
+    border-bottom: 0.1px solid gray;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.body-section div .span2{
+    display: block;
+    margin-left: 300px;
+    padding-bottom: 5px;
+}
+                </code>
+            </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nav js -->
+    <script src="./indexjs.js"></script>
+    <!-- Prism js -->
+    <script src="./prism/prism.js"></script>
+</body>
+
+</html>
