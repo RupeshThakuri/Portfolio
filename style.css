@@ -119,7 +119,6 @@ a:hover {
 }
 .close{
     display: none;
-    margin-top:70px;
 }
 .navbar__navlinks-main--social-links{
     display: none;
@@ -150,6 +149,7 @@ a:hover {
    
     .close{
         display: block;
+        margin-top:70px;
     } 
     .close__div li a{
         border-bottom: none;
